@@ -1,6 +1,10 @@
 # Core FastMCP framework (brings httpx, uvicorn, starlette)
 fastmcp==2.14.0
 
+# fastmcp 2.14.0 imports mcp.shared.exceptions.McpError, which newer mcp
+# releases renamed; it also leans on mcp 1.x for pydantic-settings
+mcp==1.28.0
+
 # Environment variable loading
 python-dotenv>=1.0.0,<2.0.0
 
